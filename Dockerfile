@@ -1,4 +1,4 @@
-FROM golang:1.12.7-alpine
+FROM golang:1.18beta2-alpine
 COPY . /opt/osint
 WORKDIR /workspace
 RUN apk update && apk add tor python2 python3 git bash gcc g++ libxslt-dev freetds-dev python3-dev python2-dev openssl-dev musl-dev libffi-dev \
